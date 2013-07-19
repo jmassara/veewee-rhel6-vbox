@@ -14,6 +14,9 @@ $ cd veewee
 $ gem install bundler
 $ bundle install
 $ cp -pR $HOME/src/veewee-rhel6u4/rhel-server-6.4-x86_64-minimal templates
+```
+NOTE: You will need to download the RHEL6.4 ISO file and copy it into $HOME/opt/veewee/iso before continuing.
+```
 $ alias veewee='bundler exec veewee'
 $ veewee vbox define 'rhel64box' 'rhel-server-6.4-x86_64-minimal'
 $ veewee vbox build 'rhel64box'
