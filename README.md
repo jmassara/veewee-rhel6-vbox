@@ -22,8 +22,9 @@ You must configure a RHEL yum repository yourself. None of these templates provi
 Barebones RHEL6 installation.
 
 ```
-$ cp -pR <project_dir>/veewee-rhel6-vbox/rhel-server-6.4-x86_64-minimal templates
+$ cd $HOME/opt/veewee
 $ alias veewee='bundle exec veewee'
+$ cp -pR <project_dir>/veewee-rhel6-vbox/rhel-server-6.4-x86_64-minimal templates
 $ veewee vbox define 'rhel64-minimal' 'rhel-server-6.4-x86_64-minimal'
 $ veewee vbox build 'rhel64-minimal'
 $ veewee vbox export 'rhel64-minimal'
