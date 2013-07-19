@@ -1,7 +1,11 @@
-veewee-rhel6u4
-==============
+veewee-rhel6-vbox
+=================
 
-Red Hat Enterprise Linux 6.4 veewee template
+# Red Hat Enterprise Linux 6.4 veewee templates
+You must configure a RHEL yum repository yourself. None of these templates provide any as it requires licensing.
+
+## rhel-server-6.4-x86_64-minimal
+Barebones RHEL6 installation.
 
 ```
 $ curl -L https://get.rvm.io | bash -s master --ruby latest-1.9
