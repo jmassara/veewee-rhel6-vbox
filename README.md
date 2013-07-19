@@ -13,7 +13,7 @@ $ cd veewee
 $ gem install bundler
 $ bundle install
 ```
-You will need to download the RHEL 6.4 ISO file and copy it into `$HOME/opt/veewee/iso`.
+You will need to download the RHEL 6.4 ISO file and copy it to `$HOME/opt/veewee/iso/rhel-server-6.4-x86_64-dvd.iso`.
 
 # RHEL 6.4 veewee templates
 You must configure a RHEL yum repository yourself. None of these templates provide any as it requires licensing.
