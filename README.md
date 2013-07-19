@@ -1,12 +1,7 @@
 veewee-rhel6-vbox
 =================
 
-# Red Hat Enterprise Linux 6.4 veewee templates
-You must configure a RHEL yum repository yourself. None of these templates provide any as it requires licensing.
-
-## rhel-server-6.4-x86_64-minimal
-Barebones RHEL6 installation.
-
+# Setup veewee using rvm
 ```
 $ curl -L https://get.rvm.io | bash -s master --ruby latest-1.9
 $ rvm install ruby-1.9.2-p290
@@ -17,13 +12,20 @@ $ echo 'rvm use ruby-1.9.2-p290@veewee --create' > veewee/.rvmrc
 $ cd veewee
 $ gem install bundler
 $ bundle install
-$ cp -pR $HOME/src/veewee-rhel6u4/rhel-server-6.4-x86_64-minimal templates
 ```
-NOTE: You will need to download the RHEL6.4 ISO file and copy it into $HOME/opt/veewee/iso before continuing.
+You will need to download the RHEL 6.4 ISO file and copy it into `$HOME/opt/veewee/iso`.
+
+# RHEL 6.4 veewee templates
+You must configure a RHEL yum repository yourself. None of these templates provide any as it requires licensing.
+
+### rhel-server-6.4-x86_64-minimal
+Barebones RHEL6 installation.
+
 ```
+$ cp -pR <project_dir>/veewee-rhel6-vbox/rhel-server-6.4-x86_64-minimal templates
 $ alias veewee='bundle exec veewee'
-$ veewee vbox define 'rhel64' 'rhel-server-6.4-x86_64-minimal'
-$ veewee vbox build 'rhel64'
-$ veewee vbox export 'rhel64'
-$ vagrant box add 'rhel64' 'rhel64.box'
+$ veewee vbox define 'rhel64-minimal' 'rhel-server-6.4-x86_64-minimal'
+$ veewee vbox build 'rhel64-minimal'
+$ veewee vbox export 'rhel64-minimal'
+$ vagrant box add 'rhel64-minimal' 'rhel64-minimal.box'
 ```
