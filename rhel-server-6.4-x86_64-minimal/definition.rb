@@ -12,7 +12,7 @@ Veewee::Session.declare({
   },
   :os_type_id => 'RedHat6_64',
   :iso_file => "rhel-server-6.4-x86_64-dvd.iso",
-  :iso_src => "file:///Users/sam/iso/rhel-server-6.4-x86_64-dvd.iso",
+  :iso_src => "https://<some_location_you_specify>/rhel-server-6.4-x86_64-dvd.iso",
   :iso_md5 => "467b53791903f9a0c477cbb1b24ffd1f",
   :iso_download_timeout => 1000,
   :boot_wait => "15",
