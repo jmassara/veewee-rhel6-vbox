@@ -1,7 +1,7 @@
 veewee-rhel6-vbox
 =================
 
-# Setup veewee using rbenv (my preferred method)
+### Setup veewee using rbenv (my preferred method)
 ```
 $ mkdir ~/.rbenv
 $ cd ~/.rbenv
@@ -25,7 +25,7 @@ $ gem install bundler
 $ bundle install
 ```
 
-# Setup veewee using rvm
+### Setup veewee using rvm
 ```
 $ curl -L https://get.rvm.io | bash -s master --ruby latest-1.9
 $ rvm install ruby-1.9.3-p448
@@ -38,13 +38,13 @@ $ gem install bundler
 $ bundle install
 ```
 
-# Download ISO
+### Download ISO
 You will need to download the RHEL 6.4 ISO file and copy it to `~/opt/veewee/iso/rhel-server-6.4-x86_64-dvd.iso`.
 
-# RHEL 6.4 veewee templates
+### RHEL 6.4 veewee templates
 You must configure a RHEL yum repository yourself. None of these templates provide any as it requires licensing.
 
-### rhel-server-6.4-x86_64-minimal
+#### rhel-server-6.4-x86_64-minimal
 Barebones RHEL6 installation.
 ```
 $ cd ~/opt/veewee
